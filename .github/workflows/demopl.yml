@@ -15,4 +15,10 @@ jobs:
         run: chmod +x hello.sh
       - name: execute shell script
         run: ./hello.sh
+  second_job:
+    runs-on: linuxvm1trainer
+    steps:      
+      - name: Welcome message
+        run: echo "My first GitHub Actions Job"
+      
     

@@ -17,6 +17,7 @@ jobs:
         run: ./hello.sh
   second_job:
     runs-on: linuxvm1trainer
+    needs: first_job
     steps:      
       - name: Welcome message
         run: echo "My first GitHub Actions Job"

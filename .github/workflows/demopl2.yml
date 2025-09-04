@@ -1,0 +1,16 @@
+name: Demopl2
+on: push
+
+
+jobs:
+  first_job:
+    runs-on: linuxvm1trainer
+    steps: 
+      - uses: actions/checkout@v4
+      - name: Welcome message
+        run: |
+          echo "My first GitHub Actions Job"
+          ls
+          chmod +x hello.sh
+          ./hello.sh
+      

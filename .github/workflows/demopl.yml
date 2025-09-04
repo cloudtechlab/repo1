@@ -20,6 +20,8 @@ jobs:
     needs: first_job
     steps:      
       - name: Welcome message
-        run: echo "My first GitHub Actions Job"
+        run: |
+          echo "My first GitHub Actions Job"
+          sleeps 600s
       
     

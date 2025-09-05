@@ -1,5 +1,3 @@
-Demo3:
-------------
 name: Triggered Workflow with Various Inputs
 on:
   workflow_dispatch:
